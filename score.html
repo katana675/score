@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+    <html lang="ja">
+        <head>
+            <title>
+                MacとWindows プログラマーならどっち？
+            </title>
+            <script src="./score.js"></script>
+            <linl rel="styleshhet" href="./score.css"></linl>
+        </head>
+        <body>
+            <h1>MacとWindows プログラマーならどっち？</h1>
+            <P>8つの質問に答えたらMacとWindowsのどちらがおすすめか判断します。</P>
+            <P>※判定は個人の主観に基づくものなので、参考程度にお考えください。</P>
+            <hr />
+            <form name="questionFrom">
+                <table>
+                    <tr>
+                        <td>iosアプリを作りたい</td>
+                        <td>
+                            <label><input type="radio" name="q1" value="mac">Yes</label>
+                            <label><input type="radio" name="q1" value="Win">No</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>ExcelやAccessのVBAに挑戦したい</td>
+                        <td>
+                            <label><input type="radio" name="q2" value="win">Yes</label>
+                            <label><input type="radio" name="q2" value="mac">No</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>画像や映像作品などのデザインにも使用したい</td>
+                        <td>
+                            <label><input type="radio" name="q3" value="mac">Yes</label>
+                            <label><input type="radio" name="q3" value="win">No</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>パソコンでゲームもしたい</td>
+                        <td>
+                            <label><input type="radio" name="q4" value="win">Yes</label>
+                            <label><input type="radio" name="q4" value="mac">No</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Apple製品を多く所持している</td>
+                        <td>
+                            <label><input type="radio" name="q5" value="mac">Yes</label>
+                            <label><input type="radio" name="q5" value="win">No</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>投資は安く済ませたい</td>
+                        <td>
+                            <label><input type="radio" name="q6" value="win">Yes</label>
+                            <label><input type="radio" name="q6" value="mac">No</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>プログラムを使用するユーザーはMacが多い想定だ</td>
+                        <td>
+                            <label><input type="radio" name="q7" value="win">Yes</label>
+                            <label><input type="radio" name="q7" value="mac">No</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>役所とのやり取りが多い</td>
+                        <td>
+                            <label><input type="radio" name="q8" value="win">Yes</label>
+                            <label><input type="radio" name="q8" value="mac">No</label>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <p><input id="btn" type="button" value="判定" onclick="getValue();"></p>
+            <div id="result_area">
+                <div id="hantei"></div>
+                <div id="setumei"></div>
+            </div>
+        </body>
+    </html>
